@@ -57,10 +57,12 @@ version of the reducibility predicate. The reduction rules in this file are
 identical to those presented in Girard, Lafont, and Taylor's *Proof and Types*.
 
 
-## Checking the proofs
+## Checking the proof developments
 
 The proofs can be checked with Abella 2.0.8. To check a file, 
 run the command 
 ```shell
 abella *.thm
 ```
+The proof developments and the proof scripts constituting them can also be understood
+by running them interactively using the proof assisant.
