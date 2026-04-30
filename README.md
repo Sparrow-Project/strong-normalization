@@ -1,4 +1,4 @@
-# Strong Normalization
+# Ground Stratified Inductive Definitions in Abella
 The proofs in this repository are formalizations in the 
 [Abella](https://abella-prover.org/index.html) proof assistant
 which show strong normalizability for the Simply Typed 
