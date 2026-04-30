@@ -19,11 +19,12 @@ $${\color{blue}\mathrm{red}}\ {\color{purple}{\mathrm{unit}}}\ {\color{purple}{\
 $${\color{blue}\mathrm{red}}\ ({\color{purple}{\mathrm{arr}}}\ A\ B)\ ({\color{purple}{\mathrm{lam}}}\ S) {\stackrel{\mathclap{{\mu}}}{:=}} \forall u.({\color{blue}\mathrm{red}}\ A\ u)\supset({\color{blue}\mathrm{red}}\ B\ (S\ u))$$
 $${\color{blue}\mathrm{red}}\ A\ T {\stackrel{\mathclap{{{\mu}}}}{:=}} {\color{blue}\mathrm{neutral}}\ T\wedge\forall u.({\color{blue}\mathrm{step}}\ T\ u)\supset({\color{blue}\mathrm{red}}\ A\ u)$$
 
-This definition is not stratified under an ordering of atomic formulas that is based only on their 
-predicate heads, a condition referred to as *strict stratification*. However, it is stratified under a 
-weaker notion called *ground stratification*, where the measure associated with ground atomic formulas can 
-depend also on their arguments. The interesting aspect of our examples is that this definition needs to be 
-interpreted *inductively* and not just as a fixed-point definition.
+Here, $unit$ represents a constant of the sole atomic type $*$ and $step$ is a predicate that encodes
+a &beta;-contraction step. This definition is not stratified under an ordering of atomic formulas that 
+is based only on their predicate heads, a condition referred to as *strict stratification*. However, 
+it is stratified under a weaker notion called *ground stratification*, where the measure associated 
+with ground atomic formulas can depend also on their arguments. The interesting aspect of our examples 
+is that this definition needs to be interpreted *inductively* and not just as a fixed-point definition.
 
 
 ## Simply Typed Lambda Calculus
