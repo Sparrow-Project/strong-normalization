@@ -19,7 +19,7 @@ $${\color{blue}\mathrm{red}}\ {\color{purple}{\mathrm{unit}}}\ {\color{purple}{\
 $${\color{blue}\mathrm{red}}\ ({\color{purple}{\mathrm{arr}}}\ A\ B)\ ({\color{purple}{\mathrm{lam}}}\ S) {\stackrel{\mathclap{{\mu}}}{:=}} \forall u.({\color{blue}\mathrm{red}}\ A\ u)\supset({\color{blue}\mathrm{red}}\ B\ (S\ u))$$
 $${\color{blue}\mathrm{red}}\ A\ T {\stackrel{\mathclap{{{\mu}}}}{:=}} {\color{blue}\mathrm{neutral}}\ T\wedge\forall u.({\color{blue}\mathrm{step}}\ T\ u)\supset({\color{blue}\mathrm{red}}\ A\ u)$$
 
-Here, $unit$ represents a constant of the sole atomic type $*$ and $step$ is a predicate that encodes
+Here, $unit$ represents a constant of the sole atomic type $*$, and $step$ is a predicate that encodes
 a &beta;-contraction step. This definition is not stratified under an ordering of atomic formulas that 
 is based only on their predicate heads, a condition referred to as *strict stratification*. However, 
 it is stratified under a weaker notion called *ground stratification*, where the measure associated 
