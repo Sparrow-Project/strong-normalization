@@ -1,22 +1,29 @@
 # Ground Stratified Inductive Definitions in Abella
-The proofs in this repository are formalizations in the 
-[Abella](https://abella-prover.org/index.html) proof assistant
-which show strong normalizability for the Simply Typed 
-Lambda Calculus (STLC) and System T.
-This development complements the paper *Ground Stratified Inductive Definitions* that appears in the proceedings
-of the 2026 edition of the Formal Structures in Computation and Deduction (FSCD) conference.
-In particular, this elaborates the formalizations outlined in that paper
-which make use of ground stratified inductive definitions to define reducibility.
-We remark that Abella 1.0.8, with which these scripts have been tested, does not intrinsically support
-ground stratification. Instead, it outputs a warning which asserts that the definition in question
-is not stratified in the strict sense as outlined in the paper. However, we assert that the
-use of ground stratification in the development corresponds to that in the paper.
+This repository illustrates the usefulness of ground stratified inductive definitions in a logic of 
+definitions via a formalization of strong normalizability for the Simply Typed Lambda Calculus and System T 
+in the 
+[Abella](https://abella-prover.org/index.html) proof assistant.
+As such, it complements the paper entitled *Ground Stratified Inductive Definitions* that appears in 
+the proceedings of the 2026 edition of the *Formal Structures in Computation and Deduction* (FSCD) conference 
+by providing a complete development of the examples sketched out in that paper. 
+These proofs have been tested with Abella version 1.0.8. Although this version of Abella is based on 
+a logic that doesn't not permit inductive definitions that are ground stratified, it allows them to
+be used with a warning in developments. The work in the companion paper provides partial justification
+for eliding the warning.
 
+The critical idea underlying the proof of strong normalizability is the use of a logical relations style
+definition of a reducibility predicate for the terms in the object language. Limiting the language to 
+that of STLC, this predicate is defined as follows:
 
-The inductive version of the reducibility predicate may be summarized as follows:
 $${\color{blue}\mathrm{red}}\ {\color{purple}{\mathrm{unit}}}\ {\color{purple}{\star}} {\stackrel{\mathclap{{\mu}}}{:=}}\ \top$$
 $${\color{blue}\mathrm{red}}\ ({\color{purple}{\mathrm{arr}}}\ A\ B)\ ({\color{purple}{\mathrm{lam}}}\ S) {\stackrel{\mathclap{{\mu}}}{:=}} \forall u.({\color{blue}\mathrm{red}}\ A\ u)\supset({\color{blue}\mathrm{red}}\ B\ (S\ u))$$
 $${\color{blue}\mathrm{red}}\ A\ T {\stackrel{\mathclap{{{\mu}}}}{:=}} {\color{blue}\mathrm{neutral}}\ T\wedge\forall u.({\color{blue}\mathrm{step}}\ T\ u)\supset({\color{blue}\mathrm{red}}\ A\ u)$$
+
+This definition is not stratified under an ordering of atomic formulas that is based only on their 
+predicate heads, a condition referred to as *strict stratification*. However, it is stratified under a 
+weaker notion called *ground stratification*, where the measure associated with ground atomic formulas can 
+depend also on their arguments. The interesting aspect of our examples is that this definition needs to be 
+interpreted *inductively* and not just as a fixed-point definition.
 
 
 ## Simply Typed Lambda Calculus
