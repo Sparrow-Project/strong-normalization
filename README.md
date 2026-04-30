@@ -8,7 +8,7 @@ the proceedings of the 2026 edition of the *Formal Structures in Computation and
 by providing a complete development of the examples sketched out in that paper. 
 These proofs have been tested with Abella version 1.0.8. Although this version of Abella is based on 
 a logic that doesn't not permit inductive definitions that are ground stratified, it allows them to
-be used with a warning in developments. The work in the associated paper provides partial justification
+be used with a warning in developments. The work in the related paper provides partial justification
 for eliding the warning.
 
 The critical idea underlying the proof of strong normalizability is the use of a logical relations style
