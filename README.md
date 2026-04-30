@@ -15,11 +15,12 @@ The critical idea underlying the proof of strong normalizability is the use of a
 definition of a reducibility predicate for the terms in the object language. Limiting the language to 
 that of STLC, this predicate is defined as follows:
 
-$${\color{blue}\mathrm{red}}\ {\color{purple}{\mathrm{unit}}}\ {\color{purple}{\star}} {\stackrel{\mathclap{{\mu}}}{:=}}\ \top$$
-$${\color{blue}\mathrm{red}}\ ({\color{purple}{\mathrm{arr}}}\ A\ B)\ ({\color{purple}{\mathrm{lam}}}\ S) {\stackrel{\mathclap{{\mu}}}{:=}} \forall u.({\color{blue}\mathrm{red}}\ A\ u)\supset({\color{blue}\mathrm{red}}\ B\ (S\ u))$$
-$${\color{blue}\mathrm{red}}\ A\ T {\stackrel{\mathclap{{{\mu}}}}{:=}} {\color{blue}\mathrm{neutral}}\ T\wedge\forall u.({\color{blue}\mathrm{step}}\ T\ u)\supset({\color{blue}\mathrm{red}}\ A\ u)$$
+$${\color{blue}\mathrm{red}}\ {\color{purple}{\mathrm{unit}}}\ {\color{purple}{\star}}\ {\stackrel{\mathclap{{\mu}}}{:=}}\ \top$$
+$${\color{blue}\mathrm{red}}\ ({\color{purple}{\mathrm{arr}}}\ A\ B)\ ({\color{purple}{\mathrm{lam}}}\ S)\ {\stackrel{\mathclap{{\mu}}}{:=}}\ \forall u.({\color{blue}\mathrm{red}}\ A\ u)\supset({\color{blue}\mathrm{red}}\ B\ (S\ u))$$
+$${\color{blue}\mathrm{red}}\ A\ T\ {\stackrel{\mathclap{{{\mu}}}}{:=}}\ {\color{blue}\mathrm{neutral}}\ T\wedge\forall u.({\color{blue}\mathrm{step}}\ T\ u)\supset({\color{blue}\mathrm{red}}\ A\ u)$$
 
-Here, $unit$ represents a constant of the sole atomic type $*$, and $step$ is a predicate that encodes
+Here, ${\color{purple}{\star}}$ represents a constant of the sole atomic type ${\color{purple}{\mathrm{unit}}}$, 
+and ${\color{blue}{\mathrm{step}}}$ is a predicate that encodes
 a &beta;-contraction step. This definition is not stratified under an ordering of atomic formulas that 
 is based only on their predicate heads, a condition referred to as *strict stratification*. However, 
 it is stratified under a weaker notion called *ground stratification*, where the measure associated 
