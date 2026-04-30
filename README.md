@@ -3,7 +3,7 @@ This repository illustrates the usefulness of ground stratified inductive defini
 definitions via a formalization of strong normalizability for the Simply Typed Lambda Calculus and System T 
 in the 
 [Abella](https://abella-prover.org/index.html) proof assistant.
-As such, it complements the paper entitled *Ground Stratified Inductive Definitions* that appears in 
+More specifically, it complements the paper entitled *Ground Stratified Inductive Definitions* that appears in 
 the proceedings of the 2026 edition of the *Formal Structures in Computation and Deduction* (FSCD) conference 
 by providing a complete development of the examples sketched out in that paper. 
 These proofs have been tested with Abella version 1.0.8. Although this version of Abella is based on 
