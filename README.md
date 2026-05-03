@@ -7,7 +7,7 @@ More specifically, it complements the paper entitled *Ground Stratified Inductiv
 the proceedings of the 2026 edition of the *Formal Structures in Computation and Deduction* (FSCD) conference 
 by providing a complete development of the examples sketched out in that paper. 
 These proofs have been tested with Abella version 1.0.8. Although this version of Abella is based on 
-a logic that doesn't not permit inductive definitions that are ground stratified, it allows them to
+a logic that does not permit inductive definitions that are ground stratified, it allows them to
 be used with a warning in developments. The work in the related paper provides partial justification
 for eliding the warning.
 
